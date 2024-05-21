@@ -25,7 +25,7 @@ class _WelcomePageState extends State<WelcomePage> {
               children: [
                 Positioned(
                   child: Container(
-                    padding: EdgeInsets.only(left: 10),
+                    padding: const EdgeInsets.only(left: 10),
                     width: 430.w,
                     height: 538.h,
                     decoration: const BoxDecoration(
@@ -67,7 +67,7 @@ class _WelcomePageState extends State<WelcomePage> {
                             style: GoogleFonts.schibstedGrotesk(
                                 fontSize: 18.sp,
                                 fontWeight: FontWeight.w400,
-                                color: Color(0xff6D6265)),
+                                color: const Color(0xff6D6265)),
                             textAlign: TextAlign.center,
                           ),
                           24.height(),
@@ -76,7 +76,7 @@ class _WelcomePageState extends State<WelcomePage> {
                           onTap: () {
                             print('ghhtyt');
                             Navigator.push(context, CupertinoPageRoute(builder: (context) {
-                              return MainPage();
+                              return const MainPage();
                             }));
                           },
                           child: Container(
@@ -84,7 +84,7 @@ class _WelcomePageState extends State<WelcomePage> {
                             height: 56.h,
                             decoration: BoxDecoration(
                                 borderRadius: BorderRadius.circular(128.r),
-                                color: Color(0xff2D5BD0)),
+                                color: const Color(0xff2D5BD0)),
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
@@ -96,7 +96,7 @@ class _WelcomePageState extends State<WelcomePage> {
                                       color: Colors.white),
                                 ),
                                 4.width(),
-                                Icon(
+                                const Icon(
                                   CupertinoIcons.arrow_right,
                                   size: 16,
                                   color: Colors.white,

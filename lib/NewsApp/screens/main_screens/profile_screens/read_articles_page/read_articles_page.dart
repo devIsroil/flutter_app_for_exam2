@@ -1,7 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_app_for_exam2/NewsApp/utils/extension/sized_box_extension.dart';
 import 'package:flutter_app_for_exam2/NewsApp/utils/widgets/clapped_and_read_articles_widgets/card_articles.dart';
 import 'package:flutter_app_for_exam2/NewsApp/utils/widgets/clapped_and_read_articles_widgets/containers_articles.dart';
@@ -41,7 +39,6 @@ class _ReadArticlesPageState extends State<ReadArticlesPage> {
                 child: Container(
                   padding: EdgeInsets.all(14.sp),
                   width: 44.w,
-                  height: 44.h,
                   alignment: Alignment.center,
                   child: SvgPicture.asset(
                     "assets/icons/clapped_articles_page/left_arrow.svg",
@@ -75,7 +72,7 @@ class _ReadArticlesPageState extends State<ReadArticlesPage> {
                       text1: "All ",
                       text2: "(132)",
                       colorCard: selectedCategory == "All"
-                          ? Color(0xffE9EEFA)
+                          ? const Color(0xffE9EEFA)
                           : Colors.white,
                     ),
                   ),
@@ -85,7 +82,7 @@ class _ReadArticlesPageState extends State<ReadArticlesPage> {
                       text1: "Travel ",
                       text2: "(51)",
                       colorCard: selectedCategory == "Travel"
-                          ? Color(0xffE9EEFA)
+                          ? const Color(0xffE9EEFA)
                           : Colors.white,
                     ),
                   ),
@@ -95,7 +92,7 @@ class _ReadArticlesPageState extends State<ReadArticlesPage> {
                       text1: "Technology ",
                       text2: "(16)",
                       colorCard: selectedCategory == "Technology"
-                          ? Color(0xffE9EEFA)
+                          ? const Color(0xffE9EEFA)
                           : Colors.white,
                     ),
                   ),

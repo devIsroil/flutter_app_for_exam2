@@ -25,7 +25,6 @@ class ContainersArticles extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               SizedBox(
-                //height:48.h,
                 width: 238.w,
                 child: Text(
                   text1,

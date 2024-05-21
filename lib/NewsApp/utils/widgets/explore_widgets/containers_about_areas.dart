@@ -14,18 +14,20 @@ class AboutAreas extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FittedBox(
-      child: Container(
+      child: SizedBox(
         width: 366.w,
-        //height: 80.h,
         child: Row(
           children: [
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  text1,
-                  style: TextStyle(
-                      fontSize: 18.sp, fontWeight: FontWeight.w600),
+                SizedBox(
+                  width: 238.w,
+                  child: Text(
+                    text1,
+                    style: GoogleFonts.inter(
+                        fontSize: 18.sp, fontWeight: FontWeight.w600),overflow: TextOverflow.ellipsis,maxLines: 2,
+                  ),
                 ),
                 2.height(),
                 Row(

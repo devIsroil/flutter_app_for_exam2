@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_app_for_exam2/NewsApp/screens/main_screens/home_screens/article_page.dart';
+import 'package:flutter_app_for_exam2/NewsApp/screens/main_screens/home_screens/all_articles/article4_page.dart';
 import 'package:flutter_app_for_exam2/NewsApp/utils/extension/sized_box_extension.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ScrollContainer extends StatelessWidget {
   late String image;
@@ -15,7 +16,7 @@ class ScrollContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding:  EdgeInsets.only(left: 32.w,top: 24.h),
+      padding:  EdgeInsets.only(left: 32.w,top: 24.h,),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -37,14 +38,14 @@ class ScrollContainer extends StatelessWidget {
               children: [
                 Text(
                   text1,
-                  style: TextStyle(
+                  style: GoogleFonts.inter(
                       fontSize: 24.sp,
                       fontWeight: FontWeight.w600),
                 ),
                 8.height(),
                 Text(
                   text2,
-                  style: TextStyle(
+                  style: GoogleFonts.inter(
                       fontWeight: FontWeight.w400,
                       fontSize: 14.sp,
                       color: Color(0xff6D6265)),

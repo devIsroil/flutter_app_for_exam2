@@ -1,7 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_app_for_exam2/NewsApp/utils/extension/sized_box_extension.dart';
 import 'package:flutter_app_for_exam2/NewsApp/utils/widgets/clapped_and_read_articles_widgets/card_articles.dart';
 import 'package:flutter_app_for_exam2/NewsApp/utils/widgets/clapped_and_read_articles_widgets/containers_articles.dart';
@@ -37,7 +35,7 @@ class _ClappedArticlesPageState extends State<ClappedArticlesPage> {
               20.width(),
               GestureDetector(
                 onTap: (){
-                  Navigator.of(context).pop(CupertinoPageRoute(builder: (context)=>ClappedArticlesPage()));
+                  Navigator.of(context).pop(CupertinoPageRoute(builder: (context)=>const ClappedArticlesPage()));
                 },
                 child: Container(
                   padding: EdgeInsets.all(14.sp),
@@ -76,7 +74,7 @@ class _ClappedArticlesPageState extends State<ClappedArticlesPage> {
                       text1: "All ",
                       text2: "(132)",
                       colorCard: selectedCategory == "All"
-                          ? Color(0xffE9EEFA)
+                          ? const Color(0xffE9EEFA)
                           : Colors.white,
                     ),
                   ),
@@ -86,7 +84,7 @@ class _ClappedArticlesPageState extends State<ClappedArticlesPage> {
                       text1: "Travel ",
                       text2: "(51)",
                       colorCard: selectedCategory == "Travel"
-                          ? Color(0xffE9EEFA)
+                          ? const Color(0xffE9EEFA)
                           : Colors.white,
                     ),
                   ),
@@ -96,7 +94,7 @@ class _ClappedArticlesPageState extends State<ClappedArticlesPage> {
                       text1: "Technology ",
                       text2: "(16)",
                       colorCard: selectedCategory == "Technology"
-                          ? Color(0xffE9EEFA)
+                          ? const Color(0xffE9EEFA)
                           : Colors.white,
                     ),
                   ),

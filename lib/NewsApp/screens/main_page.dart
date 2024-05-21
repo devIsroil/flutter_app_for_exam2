@@ -1,5 +1,4 @@
 import 'dart:ui';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app_for_exam2/NewsApp/screens/main_screens/bookmark_screens/bookmark_page.dart';
 import 'package:flutter_app_for_exam2/NewsApp/screens/main_screens/explore_screens/explore_page.dart';
@@ -23,7 +22,7 @@ class _MainPageState extends State<MainPage> {
     const HomePage(),
     const ExplorePage(),
     const BookmarkPage(),
-    const ProfilePage()
+    const ProfilePage(),
   ];
 
   @override
@@ -39,7 +38,7 @@ class _MainPageState extends State<MainPage> {
         child: BackdropFilter(
           filter: ImageFilter.blur(sigmaX: 3, sigmaY: 3),
           child: Container(
-            margin: EdgeInsets.symmetric(horizontal: 5),
+            margin: const EdgeInsets.symmetric(horizontal: 5),
             width: double.infinity,
             height: 80,
             color: Colors.transparent,

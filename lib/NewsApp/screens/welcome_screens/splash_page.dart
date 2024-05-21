@@ -16,10 +16,10 @@ class _WelcomePage1State extends State<WelcomePage1> {
   @override
   void initState() {
     super.initState();
-    Timer(Duration(milliseconds: 1800),(){
+    Timer(const Duration(seconds: 2),(){
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => WelcomePage()),
+        MaterialPageRoute(builder: (context) => const WelcomePage()),
       );
     });
   }
@@ -27,14 +27,14 @@ class _WelcomePage1State extends State<WelcomePage1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffE9EEFA),
+      backgroundColor: const Color(0xffE9EEFA),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Container(
+              SizedBox(
                 width: 169.w,
                 height: 109.h,
                 child: SvgPicture.asset("assets/icons/logo.svg"),

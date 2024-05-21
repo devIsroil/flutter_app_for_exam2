@@ -1,0 +1,13 @@
+import 'package:flutter/material.dart';
+import 'package:flutter_app_for_exam2/NewsApp/utils/widgets/articles_widgets/articles_controller.dart';
+import 'package:flutter_app_for_exam2/NewsApp/utils/widgets/articles_widgets/bottom_navigation_bar_controller.dart';
+class Article4Page extends StatelessWidget {
+  const Article4Page({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: ArticlesController(image: "assets/images/article_page/image1.png",title: "See How the Forest is Helping Our World",avatar: "assets/images/article_page/man.png",text1: "Harry Harper · Apr 12, 2023",text2: "Forests are one of the most important natural resources that our planet possesses. Not only do they provide us with a diverse range of products such as timber, medicine, and food, but they also play a vital role in mitigating climate change and maintaining the overall health of our planet's ecosystems. In this article, we will explore the ways in which forests are helping our world.One of the most important roles that forests play is in absorbing carbon dioxide from the atmosphere. Trees absorb carbon dioxide through photosynthesis and store it in their trunks, branches, and leaves. This carbon sequestration helps to mitigate climate change by reducing the amount of greenhouse gases in the atmosphere. Forests are estimated to absorb approximately 2.4 billion tonnes of carbon dioxide each year, which is equivalent to around 10% of global greenhouse gas emissions.Forests also play a crucial role in maintaining the water cycle. Trees absorb water from the soil and release it back into the atmosphere through a process known as transpiration. This helps to regulate the local climate and prevents soil erosion and flooding. Forests also act as natural water filters, helping to purify water that flows through them.Forests are also important sources of biodiversity. They provide habitat for countless species of plants and animals, many of which are found nowhere else on earth. Forests also provide a source of food and medicine for many communities around the world. In fact, it is estimated that around 80% of the world's population relies on traditional medicine derived from plants, many of which are found in forests.In addition to their ecological and cultural importance, forests also provide economic benefits. They provide jobs and income for millions of people around the world, particularly in rural areas. Forests also provide timber, paper, and other products that are essential to many industries.",bottomNavigationBar: const BottomNavigationBarController(),),
+        bottomNavigationBar: const BottomNavigationBarController());
+  }
+}

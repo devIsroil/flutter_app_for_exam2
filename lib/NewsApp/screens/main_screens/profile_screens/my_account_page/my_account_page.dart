@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_app_for_exam2/NewsApp/screens/main_screens/profile_screens/profile_page.dart';
 import 'package:flutter_app_for_exam2/NewsApp/utils/extension/sized_box_extension.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -24,7 +23,7 @@ class MyAccountPage extends StatelessWidget {
                 GestureDetector(
                   onTap: () {
                     Navigator.of(context).pop(CupertinoPageRoute(
-                        builder: (context) => ProfilePage()));
+                        builder: (context) => const ProfilePage()));
                   },
                   child: Container(
                     padding: EdgeInsets.all(14.sp),
@@ -77,7 +76,7 @@ class MyAccountPage extends StatelessWidget {
                           style: GoogleFonts.inter(
                             fontSize: 14.sp,
                             fontWeight: FontWeight.w400,
-                            color: Color(0xff6D6265),
+                            color: const Color(0xff6D6265),
                           ),
                         ),
                       ],
@@ -113,7 +112,7 @@ class MyAccountPage extends StatelessWidget {
                           style: GoogleFonts.inter(
                             fontSize: 14.sp,
                             fontWeight: FontWeight.w400,
-                            color: Color(0xff6D6265),
+                            color: const Color(0xff6D6265),
                           ),
                         ),
                       ],
@@ -151,7 +150,7 @@ class MyAccountPage extends StatelessWidget {
               16.height(),
               Padding(
                 padding: EdgeInsets.only(left: 32.w,right: 37.w),
-                child: Divider(
+                child: const Divider(
                   thickness: 1,
                   color: Color(0xffE2E0E0),
                 ),
@@ -172,7 +171,7 @@ class MyAccountPage extends StatelessWidget {
                           style: GoogleFonts.inter(
                             fontSize: 14.sp,
                             fontWeight: FontWeight.w400,
-                            color: Color(0xffE02607)
+                            color: const Color(0xffE02607)
                           ),
                         ),
                         Text(
@@ -180,7 +179,7 @@ class MyAccountPage extends StatelessWidget {
                           style: GoogleFonts.inter(
                             fontSize: 14.sp,
                             fontWeight: FontWeight.w400,
-                            color: Color(0xff6D6265),
+                            color: const Color(0xff6D6265),
                           ),
                         ),
                       ],

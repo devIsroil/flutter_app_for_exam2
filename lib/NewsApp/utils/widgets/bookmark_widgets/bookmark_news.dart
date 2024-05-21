@@ -12,18 +12,20 @@ class BookmarkNews extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return SizedBox(
       width: 366.w,
-      //height: 80.h,
       child: Row(
         children: [
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Text(
-                text1,
-                style: TextStyle(
-                    fontSize: 18.sp, fontWeight: FontWeight.w600),
+              SizedBox(
+                width: 238.w,
+                child: Text(
+                  text1,
+                  style: GoogleFonts.inter(
+                      fontSize: 18.sp, fontWeight: FontWeight.w600),overflow: TextOverflow.ellipsis,maxLines: 2,
+                ),
               ),
               4.height(),
               Text(
@@ -36,7 +38,7 @@ class BookmarkNews extends StatelessWidget {
               ),
             ],
           ),
-          Spacer(),
+          const Spacer(),
           Container(
             width: 112.w,
             height: 80.h,

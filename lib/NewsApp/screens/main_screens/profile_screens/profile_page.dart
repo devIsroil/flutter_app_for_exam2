@@ -28,7 +28,7 @@ class _ProfilePageState extends State<ProfilePage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Container(
+            SizedBox(
               width: 366.w,
               height: 120.h,
               child: Row(
@@ -58,7 +58,7 @@ class _ProfilePageState extends State<ProfilePage> {
                           Text(
                             "Bookworm",
                             style: GoogleFonts.inter(
-                                color: Color(0xff577CD9),
+                                color: const Color(0xff577CD9),
                                 fontSize: 14.sp,
                                 fontWeight: FontWeight.w400),
                           ),
@@ -86,7 +86,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             style: GoogleFonts.inter(
                               fontWeight: FontWeight.w400,
                               fontSize: 14.sp,
-                              color: Color(0xff8A8184),
+                              color: const Color(0xff8A8184),
                             ),
                           ),
                           Text(
@@ -100,7 +100,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       ),
                     ),
                     48.width(),
-                    Container(
+                    SizedBox(
                       width: 113.w,
                       //height: 57.h,
                       child: Column(
@@ -111,7 +111,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             style: GoogleFonts.inter(
                               fontWeight: FontWeight.w400,
                               fontSize: 14.sp,
-                              color: Color(0xff8A8184),
+                              color: const Color(0xff8A8184),
                             ),
                           ),
                           Text(
@@ -125,7 +125,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       ),
                     ),
                     48.width(),
-                    Container(
+                    SizedBox(
                       width: 46.w,
                       //height: 57.h,
                       child: Column(
@@ -136,7 +136,7 @@ class _ProfilePageState extends State<ProfilePage> {
                             style: GoogleFonts.inter(
                               fontWeight: FontWeight.w400,
                               fontSize: 14.sp,
-                              color: Color(0xff8A8184),
+                              color: const Color(0xff8A8184),
                             ),
                           ),
                           Text(
@@ -153,7 +153,7 @@ class _ProfilePageState extends State<ProfilePage> {
                 ),
               ],
             ),
-            Divider(
+            const Divider(
               thickness: 1,
               color: Color(0xffE2E0E0),
             ),
@@ -167,9 +167,9 @@ class _ProfilePageState extends State<ProfilePage> {
             GestureDetector(
               onTap: () {
                 Navigator.of(context).push(CupertinoPageRoute(
-                    builder: (context) => ClappedArticlesPage()));
+                    builder: (context) => const ClappedArticlesPage()));
               },
-              child: Container(
+              child: SizedBox(
                 width: 366.w,
                 height: 42.h,
                 child: Row(
@@ -179,7 +179,7 @@ class _ProfilePageState extends State<ProfilePage> {
                       style: GoogleFonts.inter(
                           fontWeight: FontWeight.w400, fontSize: 14.sp),
                     ),
-                    Spacer(),
+                    const Spacer(),
                     SvgPicture.asset(
                         "assets/icons/profile_page/right_arrow.svg"),
                   ],
@@ -190,9 +190,9 @@ class _ProfilePageState extends State<ProfilePage> {
             GestureDetector(
               onTap: () {
                 Navigator.of(context).push(CupertinoPageRoute(
-                    builder: (context) => ReadArticlesPage()));
+                    builder: (context) => const ReadArticlesPage()));
               },
-              child: Container(
+              child: SizedBox(
                 width: 366.w,
                 height: 42.h,
                 child: Row(children: [
@@ -201,7 +201,7 @@ class _ProfilePageState extends State<ProfilePage> {
                     style: GoogleFonts.inter(
                         fontWeight: FontWeight.w400, fontSize: 14.sp),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   SvgPicture.asset("assets/icons/profile_page/right_arrow.svg"),
                 ]),
               ),
@@ -216,9 +216,9 @@ class _ProfilePageState extends State<ProfilePage> {
             GestureDetector(
               onTap: () {
                 Navigator.of(context).push(
-                    CupertinoPageRoute(builder: (context) => MyAccountPage()));
+                    CupertinoPageRoute(builder: (context) => const MyAccountPage()));
               },
-              child: Container(
+              child: SizedBox(
                 width: 366.w,
                 height: 42.h,
                 child: Row(children: [
@@ -227,13 +227,13 @@ class _ProfilePageState extends State<ProfilePage> {
                     style: GoogleFonts.inter(
                         fontWeight: FontWeight.w400, fontSize: 14.sp),
                   ),
-                  Spacer(),
+                  const Spacer(),
                   SvgPicture.asset("assets/icons/profile_page/right_arrow.svg"),
                 ]),
               ),
             ),
             15.height(),
-            Container(
+            SizedBox(
               width: 366.w,
               height: 41.h,
               child: Row(children: [
@@ -242,12 +242,12 @@ class _ProfilePageState extends State<ProfilePage> {
                   style: GoogleFonts.inter(
                       fontWeight: FontWeight.w400, fontSize: 14.sp),
                 ),
-                Spacer(),
+                const Spacer(),
                 SvgPicture.asset("assets/icons/profile_page/right_arrow.svg"),
               ]),
             ),
             15.height(),
-            Container(
+            SizedBox(
               width: 366.w,
               height: 42.w,
               child: Row(children: [
@@ -256,7 +256,7 @@ class _ProfilePageState extends State<ProfilePage> {
                   style: GoogleFonts.inter(
                       fontWeight: FontWeight.w400, fontSize: 14.sp),
                 ),
-                Spacer(),
+                const Spacer(),
                 SvgPicture.asset("assets/icons/profile_page/right_arrow.svg"),
               ]),
             ),
